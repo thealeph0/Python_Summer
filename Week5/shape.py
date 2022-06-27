@@ -72,4 +72,32 @@ class Cylinder(Circle):
     def print(self):
        Circle.print(self)
        print('Height: ' , self.height )
+        
+def main():
+    '''xCor = float(input('Enter an X coordinate: '))
+    yCor = float(input('Enter a Y coordinate: '))
+    rad = float(input('Enter the radius of a Circle: '))
+    h = float(input('Enter the height of a Cylinder: '))
+
+    point = Point(xCor,yCor)
+    circle = Circle(xCor,yCor, rad)
+    cyl = Cylinder(xCor,yCor,rad,h)'''
+
+    point = Point(7,11)
+    circle = Circle(3.5,22,8)
+    cyl = Cylinder(10,3.3,10,10)
+
+    point.printShapeName()
+    point.print()
+
+    circle.printShapeName()
+    circle.print()
+    print('The area is: ' , format(circle.area(), ',.2f'))
+
+    cyl.printShapeName()
+    cyl.print()
+    print('The surface area is: ' , format(cyl.area(), ',.2f'))
+    print('The volume is: ' , format(cyl.volume(), ',.2f'))
+
+main()
 
